@@ -142,3 +142,22 @@ game_hash.each do |team, team_hash|
 
   end
 end
+
+def shoe_size(name)
+  
+game_hash.each do |team, team_hash|
+  
+    
+
+    team_hash[:players].each do |player, player_hash|
+      
+       if player[:name] == name
+           
+          return player[:shoe] 
+      end 
+    
+    end 
+       
+  end
+end
+
