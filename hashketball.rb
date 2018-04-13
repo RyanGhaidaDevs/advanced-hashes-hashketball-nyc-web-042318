@@ -238,7 +238,7 @@ def player_stats(player_name)
 
       if player_hash[:name] == player_name
 
-          return player_hash.except!(:name)
+          return player_hash.except(:name)
 
 
 
