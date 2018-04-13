@@ -192,7 +192,7 @@ def team_colors (team_name)
   end
 end
 
-def team_names(game)
+def team_names(argument)
 
   game.collect do |location, team_hash|
 
