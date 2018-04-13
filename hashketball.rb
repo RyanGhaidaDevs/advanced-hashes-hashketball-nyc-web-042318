@@ -267,27 +267,27 @@ def player_stats(player_name)
           end
         end
   end
-end 
+end
 
 
 def rebounds_for_largest_shoe_size
-shoe_arr = [] 
+shoe_arr = []
  game_hash.each do |location, attributes|
-   
+
    attributes[:players].each do |x|
-     
+
      x.each do |quality,value|
-       
-       puts quality 
-       
-       
-        
-       
-      
-        
-      end 
-     
-   
+
+       puts quality
+
+
+
+
+
+
+      end
+
+
     end
   end
   shoe_arr
