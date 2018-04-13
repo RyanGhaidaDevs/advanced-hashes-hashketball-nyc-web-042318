@@ -225,3 +225,26 @@ def player_numbers(team_name)
   end
   arr
 end
+
+
+
+def player_stats(player_name)
+  arr = [] 
+  game_hash.each do |location, team_hash|
+    
+    team_hash[:players].each do |player_hash|
+     
+      
+      if player_hash[:name] == player_name
+        
+         player_hash.each do |x,y|
+           
+           arr << y  
+           
+         end
+        
+      end
+    end
+  end
+  arr 
+end
