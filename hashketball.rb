@@ -230,22 +230,22 @@ end
 
 
 def player_stats(player_name)
-  arr = [] 
+  arr = []
   game_hash.each do |location, team_hash|
-    
+
     team_hash[:players].collect do |player_hash|
-     
-      
+
+
       if player_hash[:name] == player_name
-        
+
           return player_hash
-           
-           
-           
-         
-        
+
+
+
+
+
       end
     end
   end
-   
+
 end
