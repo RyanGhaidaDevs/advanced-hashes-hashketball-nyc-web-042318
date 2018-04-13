@@ -285,4 +285,4 @@ shoe_arr = []
     end
   end
   shoe_arr
- end 
+ end
