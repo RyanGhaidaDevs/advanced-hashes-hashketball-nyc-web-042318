@@ -192,11 +192,12 @@ def team_colors (team_name)
   end
 end
 
-def team_names(argument)
-
+def team_names(game)
+arr = [] 
   game.collect do |location, team_hash|
 
-    return team_hash[:team_name]
+  arr << team_hash[:team_name]
 
   end
+  return arr 
 end
