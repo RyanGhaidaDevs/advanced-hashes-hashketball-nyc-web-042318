@@ -228,16 +228,17 @@ end
 
 
 
+
 def player_stats(player_name)
   arr = [] 
   game_hash.each do |location, team_hash|
     
-    team_hash[:players].each do |player_hash|
+    team_hash[:players].collect do |player_hash|
      
       
       if player_hash[:name] == player_name
         
-         arr << player_hash
+          return player_hash
            
            
            
@@ -246,5 +247,5 @@ def player_stats(player_name)
       end
     end
   end
-   arr
+   
 end
