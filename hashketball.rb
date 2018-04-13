@@ -284,5 +284,5 @@ shoe_arr = []
 
     end
   end
-  shoe_arr
+  shoe_arr =  12
  end
