@@ -251,19 +251,19 @@ def player_stats(player_name)
 end
 
 def player_stats(player_name)
-  arr = [] 
+  arr = []
   hash = {}
   game_hash.each do |location, team_hash|
-    
+
         team_hash[:players].collect do |player_hash|
-     
-      
+
+
           if player_hash[:name] == player_name
-        
-           
-              return player_hash.tap { |h| h.delete(:name) } 
-              
-            
+
+
+              return player_hash.tap { |h| h.delete(:name) }
+
+
           end
         end
   end
