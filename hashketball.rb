@@ -215,7 +215,7 @@ def player_numbers(team_name)
      team_hash[:players].each do |value|
        value.each do |spec,value|
 
-          if spec == :points
+          if spec == :number
             arr <<  value
             end
        end
