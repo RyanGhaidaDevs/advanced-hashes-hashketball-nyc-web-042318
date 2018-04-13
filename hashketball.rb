@@ -192,7 +192,7 @@ def team_colors (team_name)
   end
 end
 
-def team_names(game_hash)
+def team_names
   x = []
 
 
@@ -201,5 +201,5 @@ def team_names(game_hash)
      x << team_hash[:team_name]
 
   end
- x 
+ x
 end
